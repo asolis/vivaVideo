@@ -31,7 +31,7 @@ void ProcessInput::operator()()
             _channel->close();
         else
         {
-            _channel->addImage(frame);
+            _channel->addData(frame);
         }
         
     }
@@ -48,7 +48,7 @@ void ProcessOutput::operator()()
     while (_channel->isOpen())
     {
         Mat frame;
-        bool hasFrame = _channel->getFrame(frame);
+        bool hasFrame = _channel->getData(frame);
         if (!hasFrame || frame.empty())
             _channel->close();
         else
@@ -125,7 +125,7 @@ void Processor::run()
         bool hasFrame = true;
         
         if (!freezed)
-            hasFrame = _input_channel->getFrame(frame);
+            hasFrame = _input_channel->getData(frame);
         else
             frame = freezeFrame;
         
@@ -158,7 +158,7 @@ void Processor::run()
             if (_showOutput && !frameOut.empty())
                 cv::imshow(_outputWindowName, frameOut);
             if (_output)
-                _output_channel->addImage(frameOut);
+                _output_channel->addData(frameOut);
             
             int key = waitKey(1);
             if (key == Keys::ESC)
@@ -183,3 +183,5 @@ void Processor::run()
     
     destroyAllWindows();
 }
+
+

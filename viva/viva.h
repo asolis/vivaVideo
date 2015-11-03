@@ -133,7 +133,7 @@ namespace viva {
     public:
         
         Processor():
-        _input(new CameraInput(0, Size(-1,-1))),
+        _input(nullptr),
         _process(new ProcessFrame()),
         _output(nullptr),
         _functor(nullptr),
@@ -209,9 +209,13 @@ namespace viva {
         }
         
         void run();
-};
+    };
     
     
+    
+    
+    
+ 
 }
 
 #endif
