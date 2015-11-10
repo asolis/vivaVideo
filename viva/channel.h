@@ -63,7 +63,7 @@ namespace viva
     template<class Data>
     void BufferedChannel<Data>::setCapacity(size_t capacity)
     {
-        std::unique_lock<std::mutex> guard(_access_queue);
+        std::lock_guard<std::mutex> guard(_access_queue);
         _capacity = capacity;
     }
     
