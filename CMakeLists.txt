@@ -2,12 +2,13 @@ SET(project_name "vivaVideo")
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 
 PROJECT("${project_name}")
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x -fpermissive")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 # add opencv package to the project
 FIND_PACKAGE( OpenCV REQUIRED )
 INCLUDE_DIRECTORIES( ${OpenCV_INCLUDE_DIRS} ) 
-SET(OpenCV_LIBRARIES "opencv_video;opencv_ts;opencv_ml;opencv_objdetect;opencv_imgproc;opencv_highgui;opencv_features2d;opencv_core;")
+#SET(OpenCV_LIBRARIES "opencv_video;opencv_ts;opencv_ml;opencv_objdetect;opencv_imgproc;opencv_highgui;opencv_features2d;opencv_core;")
+SET(OpenCV_LIBRARIES ${OpenCV_LIBS})
 
 FILE(GLOB files
   "*.h"
