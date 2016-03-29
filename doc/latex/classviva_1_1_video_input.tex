@@ -1,0 +1,129 @@
+\hypertarget{classviva_1_1_video_input}{}\section{viva\+:\+:Video\+Input Class Reference}
+\label{classviva_1_1_video_input}\index{viva\+::\+Video\+Input@{viva\+::\+Video\+Input}}
+
+
+{\ttfamily \#include $<$input.\+h$>$}
+
+
+
+Inheritance diagram for viva\+:\+:Video\+Input\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{classviva_1_1_video_input__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for viva\+:\+:Video\+Input\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{classviva_1_1_video_input__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classviva_1_1_video_input_a37aabc4cd8ebc70dfa9b49bcb7a5d330}{Video\+Input} (const string \&filename, const Size \&size=Size(-\/1,-\/1), int color\+Flag=-\/1)
+\item 
+\hyperlink{classviva_1_1_video_input_adb9f341fb5b01b81b34f6f7f4f1eaa80}{Video\+Input} (const int id, const Size \&size=Size(-\/1,-\/1), int color\+Flag=-\/1)
+\item 
+\hyperlink{classviva_1_1_video_input_a88f06259f63094534518f32397024cfb}{Video\+Input} ()
+\item 
+\hyperlink{classviva_1_1_video_input_aece2200729baa8cef7db668583fb6470}{$\sim$\+Video\+Input} ()
+\item 
+bool \hyperlink{classviva_1_1_video_input_ab4819eb95ad41ba9a59536f60eefa5a9}{get\+Frame} (Mat \&frame)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Video\+Capture {\bfseries \+\_\+\+Camera\+Input}\hypertarget{classviva_1_1_video_input_a3b7196ebc0f6009f4ad63be661a00fd3}{}\label{classviva_1_1_video_input_a3b7196ebc0f6009f4ad63be661a00fd3}
+
+\item 
+bool {\bfseries \+\_\+opened}\hypertarget{classviva_1_1_video_input_ae98b3866cd376d0dfaf80b191c57db30}{}\label{classviva_1_1_video_input_ae98b3866cd376d0dfaf80b191c57db30}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for Video Sequence inputs 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{viva\+::\+Video\+Input@{viva\+::\+Video\+Input}!Video\+Input@{Video\+Input}}
+\index{Video\+Input@{Video\+Input}!viva\+::\+Video\+Input@{viva\+::\+Video\+Input}}
+\subsubsection[{\texorpdfstring{Video\+Input(const string \&filename, const Size \&size=\+Size(-\/1,-\/1), int color\+Flag=-\/1)}{VideoInput(const string &filename, const Size &size=Size(-1,-1), int colorFlag=-1)}}]{\setlength{\rightskip}{0pt plus 5cm}Video\+Input\+::\+Video\+Input (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{filename, }
+\item[{const Size \&}]{size = {\ttfamily Size(-\/1,-\/1)}, }
+\item[{int}]{color\+Flag = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}\hypertarget{classviva_1_1_video_input_a37aabc4cd8ebc70dfa9b49bcb7a5d330}{}\label{classviva_1_1_video_input_a37aabc4cd8ebc70dfa9b49bcb7a5d330}
+\hyperlink{classviva_1_1_video_input}{Video\+Input} constructor using a filename. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & could be\+: 1)video file i.\+e., movie.\+avi 2)a regular pattern filename i.\+e. imag0\%2d.\+jpg 3)a url pointing to a video stream i.\+e., \href{http://domain.com/movie.avi}{\tt http\+://domain.\+com/movie.\+avi} \\
+\hline
+{\em size} & will scale the original feed to the desired size resolution unless (-\/1,-\/1) is defined \\
+\hline
+{\em color\+Flag} & Open\+CV conversion flag type value e.\+g., C\+V\+\_\+\+B\+G\+R2\+G\+R\+AY \\
+\hline
+\end{DoxyParams}
+\index{viva\+::\+Video\+Input@{viva\+::\+Video\+Input}!Video\+Input@{Video\+Input}}
+\index{Video\+Input@{Video\+Input}!viva\+::\+Video\+Input@{viva\+::\+Video\+Input}}
+\subsubsection[{\texorpdfstring{Video\+Input(const int id, const Size \&size=\+Size(-\/1,-\/1), int color\+Flag=-\/1)}{VideoInput(const int id, const Size &size=Size(-1,-1), int colorFlag=-1)}}]{\setlength{\rightskip}{0pt plus 5cm}Video\+Input\+::\+Video\+Input (
+\begin{DoxyParamCaption}
+\item[{const int}]{id, }
+\item[{const Size \&}]{size = {\ttfamily Size(-\/1,~-\/1)}, }
+\item[{int}]{color\+Flag = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}\hypertarget{classviva_1_1_video_input_adb9f341fb5b01b81b34f6f7f4f1eaa80}{}\label{classviva_1_1_video_input_adb9f341fb5b01b81b34f6f7f4f1eaa80}
+\hyperlink{classviva_1_1_video_input}{Video\+Input} constructor using a camera id. 
+\begin{DoxyParams}{Parameters}
+{\em id} & the camera identifier. \\
+\hline
+{\em size} & will scale the original feed to the desired size resolution unless (-\/1,-\/1) is defined \\
+\hline
+{\em color\+Flag} & Open\+CV conversion flag type value e.\+g., C\+V\+\_\+\+B\+G\+R2\+G\+R\+AY \\
+\hline
+\end{DoxyParams}
+\index{viva\+::\+Video\+Input@{viva\+::\+Video\+Input}!Video\+Input@{Video\+Input}}
+\index{Video\+Input@{Video\+Input}!viva\+::\+Video\+Input@{viva\+::\+Video\+Input}}
+\subsubsection[{\texorpdfstring{Video\+Input()}{VideoInput()}}]{\setlength{\rightskip}{0pt plus 5cm}Video\+Input\+::\+Video\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classviva_1_1_video_input_a88f06259f63094534518f32397024cfb}{}\label{classviva_1_1_video_input_a88f06259f63094534518f32397024cfb}
+Default constructor \index{viva\+::\+Video\+Input@{viva\+::\+Video\+Input}!````~Video\+Input@{$\sim$\+Video\+Input}}
+\index{````~Video\+Input@{$\sim$\+Video\+Input}!viva\+::\+Video\+Input@{viva\+::\+Video\+Input}}
+\subsubsection[{\texorpdfstring{$\sim$\+Video\+Input()}{~VideoInput()}}]{\setlength{\rightskip}{0pt plus 5cm}Video\+Input\+::$\sim$\+Video\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classviva_1_1_video_input_aece2200729baa8cef7db668583fb6470}{}\label{classviva_1_1_video_input_aece2200729baa8cef7db668583fb6470}
+Desctructor 
+
+\subsection{Member Function Documentation}
+\index{viva\+::\+Video\+Input@{viva\+::\+Video\+Input}!get\+Frame@{get\+Frame}}
+\index{get\+Frame@{get\+Frame}!viva\+::\+Video\+Input@{viva\+::\+Video\+Input}}
+\subsubsection[{\texorpdfstring{get\+Frame(\+Mat \&frame)}{getFrame(Mat &frame)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Video\+Input\+::get\+Frame (
+\begin{DoxyParamCaption}
+\item[{Mat \&}]{frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classviva_1_1_video_input_ab4819eb95ad41ba9a59536f60eefa5a9}{}\label{classviva_1_1_video_input_ab4819eb95ad41ba9a59536f60eefa5a9}
+Overrided from \hyperlink{classviva_1_1_input}{Input} Base Class. Used to extract a frame from the input sequence. Returns whether or not a frame was sucessfuly returned. 
+\begin{DoxyParams}{Parameters}
+{\em frame} & output image frame from the sequence \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classviva_1_1_input_aa24f1c290895fba92d7e1c6032dc4ecb}{viva\+::\+Input}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+input.\+h\item 
+input.\+cpp\end{DoxyCompactItemize}

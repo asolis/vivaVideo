@@ -1,0 +1,89 @@
+\hypertarget{classviva_1_1_output}{}\section{viva\+:\+:Output Class Reference}
+\label{classviva_1_1_output}\index{viva\+::\+Output@{viva\+::\+Output}}
+
+
+{\ttfamily \#include $<$output.\+h$>$}
+
+
+
+Inheritance diagram for viva\+:\+:Output\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classviva_1_1_output__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classviva_1_1_output_a184b70bb8e871a6e538e5dae1794de9a}{Output} (const Size \&size=Size(-\/1,-\/1), int conversion\+Flag=-\/1)
+\item 
+virtual \hyperlink{classviva_1_1_output_a54e4b6572be4e5c2affde8eead501a5d}{$\sim$\+Output} ()
+\item 
+virtual bool \hyperlink{classviva_1_1_output_ac74a311b4d151c5507d1351b7fc3426e}{write\+Frame} (Mat \&frame)=0
+\item 
+virtual void \hyperlink{classviva_1_1_output_a6fc610f298473208bf780ccec88dd018}{close} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Size {\bfseries \+\_\+size}\hypertarget{classviva_1_1_output_a8f7f08a43c3c7381420541faf65e940c}{}\label{classviva_1_1_output_a8f7f08a43c3c7381420541faf65e940c}
+
+\item 
+bool {\bfseries \+\_\+convert}\hypertarget{classviva_1_1_output_ac60b23056f3df565dec684751c3ada23}{}\label{classviva_1_1_output_ac60b23056f3df565dec684751c3ada23}
+
+\item 
+int {\bfseries \+\_\+conversion\+Flag}\hypertarget{classviva_1_1_output_ad65736a928c2aa6613276b6ee2ee8045}{}\label{classviva_1_1_output_ad65736a928c2aa6613276b6ee2ee8045}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract \hyperlink{classviva_1_1_output}{Output} class to define a video sequence output. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{viva\+::\+Output@{viva\+::\+Output}!Output@{Output}}
+\index{Output@{Output}!viva\+::\+Output@{viva\+::\+Output}}
+\subsubsection[{\texorpdfstring{Output(const Size \&size=\+Size(-\/1,-\/1), int conversion\+Flag=-\/1)}{Output(const Size &size=Size(-1,-1), int conversionFlag=-1)}}]{\setlength{\rightskip}{0pt plus 5cm}viva\+::\+Output\+::\+Output (
+\begin{DoxyParamCaption}
+\item[{const Size \&}]{size = {\ttfamily Size(-\/1,~-\/1)}, }
+\item[{int}]{conversion\+Flag = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classviva_1_1_output_a184b70bb8e871a6e538e5dae1794de9a}{}\label{classviva_1_1_output_a184b70bb8e871a6e538e5dae1794de9a}
+\hyperlink{classviva_1_1_output}{Output} constructor defining the resolution and video type using Open\+CV conversion flags e.\+g., C\+V\+\_\+\+B\+G\+R2\+G\+R\+AY \index{viva\+::\+Output@{viva\+::\+Output}!````~Output@{$\sim$\+Output}}
+\index{````~Output@{$\sim$\+Output}!viva\+::\+Output@{viva\+::\+Output}}
+\subsubsection[{\texorpdfstring{$\sim$\+Output()}{~Output()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual viva\+::\+Output\+::$\sim$\+Output (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classviva_1_1_output_a54e4b6572be4e5c2affde8eead501a5d}{}\label{classviva_1_1_output_a54e4b6572be4e5c2affde8eead501a5d}
+Desctructor 
+
+\subsection{Member Function Documentation}
+\index{viva\+::\+Output@{viva\+::\+Output}!close@{close}}
+\index{close@{close}!viva\+::\+Output@{viva\+::\+Output}}
+\subsubsection[{\texorpdfstring{close()}{close()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void viva\+::\+Output\+::close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classviva_1_1_output_a6fc610f298473208bf780ccec88dd018}{}\label{classviva_1_1_output_a6fc610f298473208bf780ccec88dd018}
+Mehtod called to close the output medium \index{viva\+::\+Output@{viva\+::\+Output}!write\+Frame@{write\+Frame}}
+\index{write\+Frame@{write\+Frame}!viva\+::\+Output@{viva\+::\+Output}}
+\subsubsection[{\texorpdfstring{write\+Frame(\+Mat \&frame)=0}{writeFrame(Mat &frame)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool viva\+::\+Output\+::write\+Frame (
+\begin{DoxyParamCaption}
+\item[{Mat \&}]{frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classviva_1_1_output_ac74a311b4d151c5507d1351b7fc3426e}{}\label{classviva_1_1_output_ac74a311b4d151c5507d1351b7fc3426e}
+Method call to output a new frame to the final output sequence \begin{DoxyReturn}{Returns}
+true if the Mat frame was sucessfully written 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classviva_1_1_video_output_ae18c0d361f077619db8d3cdab8283697}{viva\+::\+Video\+Output}, \hyperlink{classviva_1_1_image_output_a327d64edf5251fe9fb841f348d5b62cb}{viva\+::\+Image\+Output}, and \hyperlink{classviva_1_1_none_output_a0f00d1d9c6ca1af279fd566044ef7f60}{viva\+::\+None\+Output}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+output.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,144 @@
+\hypertarget{classviva_1_1_files}{}\section{viva\+:\+:Files Class Reference}
+\label{classviva_1_1_files}\index{viva\+::\+Files@{viva\+::\+Files}}
+
+
+{\ttfamily \#include $<$utils.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \hyperlink{classviva_1_1_files_a17a0412cc8285a459d0a335bf8835e7f}{tmp\+Filename\+In\+Folder} (const string \&folder=\char`\"{}\char`\"{}, const string \&ext=\char`\"{}.jpg\char`\"{})
+\item 
+static Rect {\bfseries best\+Square\+From} (Rect \&rectangle)\hypertarget{classviva_1_1_files_aa0d277292b290426118012ffc7e4e0b7}{}\label{classviva_1_1_files_aa0d277292b290426118012ffc7e4e0b7}
+
+\item 
+static void {\bfseries save\+Squared\+In} (const Mat \&image, string folder, int side=200)\hypertarget{classviva_1_1_files_a9006758a50b0a9f92a275bf83d2ecc66}{}\label{classviva_1_1_files_a9006758a50b0a9f92a275bf83d2ecc66}
+
+\item 
+static void \hyperlink{classviva_1_1_files_a0f1b353d1cad3b64bdcd617a2e0bb356}{listdir} (const string \&dirname, vector$<$ string $>$ \&files, bool return\+Paths=true)
+\item 
+static void \hyperlink{classviva_1_1_files_a6a1c923fc2fa5ab958ae48d79944cf1d}{list\+Images} (const string \&dirname, vector$<$ string $>$ \&files, bool return\+Paths=true)
+\item 
+static bool \hyperlink{classviva_1_1_files_ac7835989bfb2b74fb864199362a92e72}{is\+Dir} (const string \&fullpath)
+\item 
+static bool \hyperlink{classviva_1_1_files_a38538c759fe494f86ac6a310c5409b1a}{is\+File} (const string \&fullpath)
+\item 
+static void \hyperlink{classviva_1_1_files_a6ffb9c2564fafe3bea2217f0fbccd2d5}{make\+Dir} (const string \&fullpath)
+\item 
+static bool \hyperlink{classviva_1_1_files_aa65c5d0667235976621e6d51969cdd47}{exists} (const string \&fullpath)
+\item 
+static void \hyperlink{classviva_1_1_files_ab3c5625f419ae2db28f16c827c53ee42}{get\+Extension} (const string \&filename, string \&extension)
+\item 
+static void \hyperlink{classviva_1_1_files_abc726ef29d704a2a8c5c75506db76e5b}{get\+Filename} (const string \&path, string \&filename)
+\item 
+static void \hyperlink{classviva_1_1_files_a0f06aae1db4372c026e5b2d7d7f9647d}{get\+Basename} (const string \&path, string \&base)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const string {\bfseries P\+A\+T\+H\+\_\+\+S\+E\+P\+A\+R\+A\+T\+OR}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Set of static functions related to file I/0 operations 
+
+\subsection{Member Function Documentation}
+\index{viva\+::\+Files@{viva\+::\+Files}!exists@{exists}}
+\index{exists@{exists}!viva\+::\+Files@{viva\+::\+Files}}
+\subsubsection[{\texorpdfstring{exists(const string \&fullpath)}{exists(const string &fullpath)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Files\+::exists (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{fullpath}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classviva_1_1_files_aa65c5d0667235976621e6d51969cdd47}{}\label{classviva_1_1_files_aa65c5d0667235976621e6d51969cdd47}
+Checks if the fullpath exits \index{viva\+::\+Files@{viva\+::\+Files}!get\+Basename@{get\+Basename}}
+\index{get\+Basename@{get\+Basename}!viva\+::\+Files@{viva\+::\+Files}}
+\subsubsection[{\texorpdfstring{get\+Basename(const string \&path, string \&base)}{getBasename(const string &path, string &base)}}]{\setlength{\rightskip}{0pt plus 5cm}void Files\+::get\+Basename (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{path, }
+\item[{string \&}]{base}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classviva_1_1_files_a0f06aae1db4372c026e5b2d7d7f9647d}{}\label{classviva_1_1_files_a0f06aae1db4372c026e5b2d7d7f9647d}
+Returns the basename of file in the path \index{viva\+::\+Files@{viva\+::\+Files}!get\+Extension@{get\+Extension}}
+\index{get\+Extension@{get\+Extension}!viva\+::\+Files@{viva\+::\+Files}}
+\subsubsection[{\texorpdfstring{get\+Extension(const string \&filename, string \&extension)}{getExtension(const string &filename, string &extension)}}]{\setlength{\rightskip}{0pt plus 5cm}void Files\+::get\+Extension (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{filename, }
+\item[{string \&}]{extension}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classviva_1_1_files_ab3c5625f419ae2db28f16c827c53ee42}{}\label{classviva_1_1_files_ab3c5625f419ae2db28f16c827c53ee42}
+Returns the extension of the filename \index{viva\+::\+Files@{viva\+::\+Files}!get\+Filename@{get\+Filename}}
+\index{get\+Filename@{get\+Filename}!viva\+::\+Files@{viva\+::\+Files}}
+\subsubsection[{\texorpdfstring{get\+Filename(const string \&path, string \&filename)}{getFilename(const string &path, string &filename)}}]{\setlength{\rightskip}{0pt plus 5cm}void Files\+::get\+Filename (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{path, }
+\item[{string \&}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classviva_1_1_files_abc726ef29d704a2a8c5c75506db76e5b}{}\label{classviva_1_1_files_abc726ef29d704a2a8c5c75506db76e5b}
+Returns the filename of file in the path \index{viva\+::\+Files@{viva\+::\+Files}!is\+Dir@{is\+Dir}}
+\index{is\+Dir@{is\+Dir}!viva\+::\+Files@{viva\+::\+Files}}
+\subsubsection[{\texorpdfstring{is\+Dir(const string \&fullpath)}{isDir(const string &fullpath)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Files\+::is\+Dir (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{fullpath}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classviva_1_1_files_ac7835989bfb2b74fb864199362a92e72}{}\label{classviva_1_1_files_ac7835989bfb2b74fb864199362a92e72}
+Check if path is a directory \index{viva\+::\+Files@{viva\+::\+Files}!is\+File@{is\+File}}
+\index{is\+File@{is\+File}!viva\+::\+Files@{viva\+::\+Files}}
+\subsubsection[{\texorpdfstring{is\+File(const string \&fullpath)}{isFile(const string &fullpath)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Files\+::is\+File (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{fullpath}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classviva_1_1_files_a38538c759fe494f86ac6a310c5409b1a}{}\label{classviva_1_1_files_a38538c759fe494f86ac6a310c5409b1a}
+Check if path is a regular file \index{viva\+::\+Files@{viva\+::\+Files}!listdir@{listdir}}
+\index{listdir@{listdir}!viva\+::\+Files@{viva\+::\+Files}}
+\subsubsection[{\texorpdfstring{listdir(const string \&dirname, vector$<$ string $>$ \&files, bool return\+Paths=true)}{listdir(const string &dirname, vector< string > &files, bool returnPaths=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void Files\+::listdir (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{dirname, }
+\item[{vector$<$ string $>$ \&}]{files, }
+\item[{bool}]{return\+Paths = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classviva_1_1_files_a0f1b353d1cad3b64bdcd617a2e0bb356}{}\label{classviva_1_1_files_a0f1b353d1cad3b64bdcd617a2e0bb356}
+List directory content and returns it in a vector \index{viva\+::\+Files@{viva\+::\+Files}!list\+Images@{list\+Images}}
+\index{list\+Images@{list\+Images}!viva\+::\+Files@{viva\+::\+Files}}
+\subsubsection[{\texorpdfstring{list\+Images(const string \&dirname, vector$<$ string $>$ \&files, bool return\+Paths=true)}{listImages(const string &dirname, vector< string > &files, bool returnPaths=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void Files\+::list\+Images (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{dirname, }
+\item[{vector$<$ string $>$ \&}]{files, }
+\item[{bool}]{return\+Paths = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classviva_1_1_files_a6a1c923fc2fa5ab958ae48d79944cf1d}{}\label{classviva_1_1_files_a6a1c923fc2fa5ab958ae48d79944cf1d}
+List a directory content and returns a vector of the images contined in it. \index{viva\+::\+Files@{viva\+::\+Files}!make\+Dir@{make\+Dir}}
+\index{make\+Dir@{make\+Dir}!viva\+::\+Files@{viva\+::\+Files}}
+\subsubsection[{\texorpdfstring{make\+Dir(const string \&fullpath)}{makeDir(const string &fullpath)}}]{\setlength{\rightskip}{0pt plus 5cm}void Files\+::make\+Dir (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{fullpath}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classviva_1_1_files_a6ffb9c2564fafe3bea2217f0fbccd2d5}{}\label{classviva_1_1_files_a6ffb9c2564fafe3bea2217f0fbccd2d5}
+Creates a directory in the specified path \index{viva\+::\+Files@{viva\+::\+Files}!tmp\+Filename\+In\+Folder@{tmp\+Filename\+In\+Folder}}
+\index{tmp\+Filename\+In\+Folder@{tmp\+Filename\+In\+Folder}!viva\+::\+Files@{viva\+::\+Files}}
+\subsubsection[{\texorpdfstring{tmp\+Filename\+In\+Folder(const string \&folder="""", const string \&ext="".\+jpg"")}{tmpFilenameInFolder(const string &folder="", const string &ext=".jpg")}}]{\setlength{\rightskip}{0pt plus 5cm}string Files\+::tmp\+Filename\+In\+Folder (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{folder = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{const string \&}]{ext = {\ttfamily \char`\"{}.jpg\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classviva_1_1_files_a17a0412cc8285a459d0a335bf8835e7f}{}\label{classviva_1_1_files_a17a0412cc8285a459d0a335bf8835e7f}
+Returns a temporary filename inside folder 
+
+\subsection{Member Data Documentation}
+\index{viva\+::\+Files@{viva\+::\+Files}!P\+A\+T\+H\+\_\+\+S\+E\+P\+A\+R\+A\+T\+OR@{P\+A\+T\+H\+\_\+\+S\+E\+P\+A\+R\+A\+T\+OR}}
+\index{P\+A\+T\+H\+\_\+\+S\+E\+P\+A\+R\+A\+T\+OR@{P\+A\+T\+H\+\_\+\+S\+E\+P\+A\+R\+A\+T\+OR}!viva\+::\+Files@{viva\+::\+Files}}
+\subsubsection[{\texorpdfstring{P\+A\+T\+H\+\_\+\+S\+E\+P\+A\+R\+A\+T\+OR}{PATH_SEPARATOR}}]{\setlength{\rightskip}{0pt plus 5cm}const string Files\+::\+P\+A\+T\+H\+\_\+\+S\+E\+P\+A\+R\+A\+T\+OR\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classviva_1_1_files_a7c2738e3eba6948ce46883dc630f79ee}{}\label{classviva_1_1_files_a7c2738e3eba6948ce46883dc630f79ee}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+
+
+
+\textcolor{stringliteral}{"/"}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+utils.\+h\item 
+utils.\+cpp\end{DoxyCompactItemize}

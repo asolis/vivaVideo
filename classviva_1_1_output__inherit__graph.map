@@ -1,0 +1,5 @@
+<map id="viva::Output" name="viva::Output">
+<area shape="rect" id="node2" href="$classviva_1_1_image_output.html" title="viva::ImageOutput" alt="" coords="5,79,135,104"/>
+<area shape="rect" id="node3" href="$classviva_1_1_none_output.html" title="viva::NoneOutput" alt="" coords="159,79,283,104"/>
+<area shape="rect" id="node4" href="$classviva_1_1_video_output.html" title="viva::VideoOutput" alt="" coords="307,79,433,104"/>
+</map>

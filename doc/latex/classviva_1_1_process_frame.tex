@@ -1,0 +1,132 @@
+\hypertarget{classviva_1_1_process_frame}{}\section{viva\+:\+:Process\+Frame Class Reference}
+\label{classviva_1_1_process_frame}\index{viva\+::\+Process\+Frame@{viva\+::\+Process\+Frame}}
+
+
+{\ttfamily \#include $<$viva.\+h$>$}
+
+
+
+Inheritance diagram for viva\+:\+:Process\+Frame\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classviva_1_1_process_frame__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for viva\+:\+:Process\+Frame\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classviva_1_1_process_frame__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries operator()} (const size\+\_\+t frameN, const Mat \&frame, Mat \&output)\hypertarget{classviva_1_1_process_frame_a82b5b1de63b91ce06fef1eff2d3fdf1e}{}\label{classviva_1_1_process_frame_a82b5b1de63b91ce06fef1eff2d3fdf1e}
+
+\item 
+virtual void \hyperlink{classviva_1_1_process_frame_a67f1444128085a4f18b6c7fe5086e6fc}{mouse\+Input} (int event, int x, int y, int flags)
+\item 
+virtual void \hyperlink{classviva_1_1_process_frame_a1d0476b4a6065fae4c0b46abf230be1c}{left\+Button\+Down} (int x, int y, int flags)
+\item 
+virtual void \hyperlink{classviva_1_1_process_frame_a03b8c90d990dcefdddf4ad735290d0eb}{right\+Button\+Down} (int x, int y, int flags)
+\item 
+virtual void \hyperlink{classviva_1_1_process_frame_a2c5155855fa6a88bb8124278ece845ee}{middle\+Button\+Down} (int x, int y, int flags)
+\item 
+virtual void \hyperlink{classviva_1_1_process_frame_a075654580641032ff792eedd3fd6b7a1}{mouse\+Move} (int x, int y, int flags)
+\item 
+virtual void \hyperlink{classviva_1_1_process_frame_a56d6805a983de9072ce31ea60688a408}{keyboard\+Input} (int key)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classviva_1_1_process_frame}{Process\+Frame} functor interface accepting mouse and keyboard events 
+
+\subsection{Member Function Documentation}
+\index{viva\+::\+Process\+Frame@{viva\+::\+Process\+Frame}!keyboard\+Input@{keyboard\+Input}}
+\index{keyboard\+Input@{keyboard\+Input}!viva\+::\+Process\+Frame@{viva\+::\+Process\+Frame}}
+\subsubsection[{\texorpdfstring{keyboard\+Input(int key)}{keyboardInput(int key)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void viva\+::\+Process\+Frame\+::keyboard\+Input (
+\begin{DoxyParamCaption}
+\item[{int}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classviva_1_1_process_frame_a56d6805a983de9072ce31ea60688a408}{}\label{classviva_1_1_process_frame_a56d6805a983de9072ce31ea60688a408}
+Inherited from Keyboard\+Listerner. Check \hyperlink{classviva_1_1_keyboard_listener}{Keyboard\+Listener} class for details. 
+
+Reimplemented from \hyperlink{classviva_1_1_keyboard_listener_a903947e765f8130cfe1b3ce882c95998}{viva\+::\+Keyboard\+Listener}.
+
+\index{viva\+::\+Process\+Frame@{viva\+::\+Process\+Frame}!left\+Button\+Down@{left\+Button\+Down}}
+\index{left\+Button\+Down@{left\+Button\+Down}!viva\+::\+Process\+Frame@{viva\+::\+Process\+Frame}}
+\subsubsection[{\texorpdfstring{left\+Button\+Down(int x, int y, int flags)}{leftButtonDown(int x, int y, int flags)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void viva\+::\+Process\+Frame\+::left\+Button\+Down (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classviva_1_1_process_frame_a1d0476b4a6065fae4c0b46abf230be1c}{}\label{classviva_1_1_process_frame_a1d0476b4a6065fae4c0b46abf230be1c}
+Inherited from \hyperlink{classviva_1_1_mouse_listener}{Mouse\+Listener}. Check \hyperlink{classviva_1_1_mouse_listener}{Mouse\+Listener} class for details 
+
+Reimplemented from \hyperlink{classviva_1_1_mouse_listener_ae2b6952da67ea99e47f5fcfa2e1780c7}{viva\+::\+Mouse\+Listener}.
+
+\index{viva\+::\+Process\+Frame@{viva\+::\+Process\+Frame}!middle\+Button\+Down@{middle\+Button\+Down}}
+\index{middle\+Button\+Down@{middle\+Button\+Down}!viva\+::\+Process\+Frame@{viva\+::\+Process\+Frame}}
+\subsubsection[{\texorpdfstring{middle\+Button\+Down(int x, int y, int flags)}{middleButtonDown(int x, int y, int flags)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void viva\+::\+Process\+Frame\+::middle\+Button\+Down (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classviva_1_1_process_frame_a2c5155855fa6a88bb8124278ece845ee}{}\label{classviva_1_1_process_frame_a2c5155855fa6a88bb8124278ece845ee}
+Inherited from \hyperlink{classviva_1_1_mouse_listener}{Mouse\+Listener}. Check \hyperlink{classviva_1_1_mouse_listener}{Mouse\+Listener} class for details 
+
+Reimplemented from \hyperlink{classviva_1_1_mouse_listener_a3a61b77b23875e74f817020ee1603556}{viva\+::\+Mouse\+Listener}.
+
+\index{viva\+::\+Process\+Frame@{viva\+::\+Process\+Frame}!mouse\+Input@{mouse\+Input}}
+\index{mouse\+Input@{mouse\+Input}!viva\+::\+Process\+Frame@{viva\+::\+Process\+Frame}}
+\subsubsection[{\texorpdfstring{mouse\+Input(int event, int x, int y, int flags)}{mouseInput(int event, int x, int y, int flags)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void viva\+::\+Process\+Frame\+::mouse\+Input (
+\begin{DoxyParamCaption}
+\item[{int}]{event, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classviva_1_1_process_frame_a67f1444128085a4f18b6c7fe5086e6fc}{}\label{classviva_1_1_process_frame_a67f1444128085a4f18b6c7fe5086e6fc}
+Inherited from \hyperlink{classviva_1_1_mouse_listener}{Mouse\+Listener}. Check \hyperlink{classviva_1_1_mouse_listener}{Mouse\+Listener} class for details 
+
+Reimplemented from \hyperlink{classviva_1_1_mouse_listener_aba95f99370a82ae96f89fe9a1eebd00b}{viva\+::\+Mouse\+Listener}.
+
+\index{viva\+::\+Process\+Frame@{viva\+::\+Process\+Frame}!mouse\+Move@{mouse\+Move}}
+\index{mouse\+Move@{mouse\+Move}!viva\+::\+Process\+Frame@{viva\+::\+Process\+Frame}}
+\subsubsection[{\texorpdfstring{mouse\+Move(int x, int y, int flags)}{mouseMove(int x, int y, int flags)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void viva\+::\+Process\+Frame\+::mouse\+Move (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classviva_1_1_process_frame_a075654580641032ff792eedd3fd6b7a1}{}\label{classviva_1_1_process_frame_a075654580641032ff792eedd3fd6b7a1}
+Inherited from \hyperlink{classviva_1_1_mouse_listener}{Mouse\+Listener}. Check \hyperlink{classviva_1_1_mouse_listener}{Mouse\+Listener} class for details 
+
+Reimplemented from \hyperlink{classviva_1_1_mouse_listener_af48bb769c4935f52646567118cb05900}{viva\+::\+Mouse\+Listener}.
+
+\index{viva\+::\+Process\+Frame@{viva\+::\+Process\+Frame}!right\+Button\+Down@{right\+Button\+Down}}
+\index{right\+Button\+Down@{right\+Button\+Down}!viva\+::\+Process\+Frame@{viva\+::\+Process\+Frame}}
+\subsubsection[{\texorpdfstring{right\+Button\+Down(int x, int y, int flags)}{rightButtonDown(int x, int y, int flags)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void viva\+::\+Process\+Frame\+::right\+Button\+Down (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classviva_1_1_process_frame_a03b8c90d990dcefdddf4ad735290d0eb}{}\label{classviva_1_1_process_frame_a03b8c90d990dcefdddf4ad735290d0eb}
+Inherited from \hyperlink{classviva_1_1_mouse_listener}{Mouse\+Listener}. Check \hyperlink{classviva_1_1_mouse_listener}{Mouse\+Listener} class for details 
+
+Reimplemented from \hyperlink{classviva_1_1_mouse_listener_ae4a2d181ecebf2e4001ce6440339ed60}{viva\+::\+Mouse\+Listener}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+viva.\+h\end{DoxyCompactItemize}

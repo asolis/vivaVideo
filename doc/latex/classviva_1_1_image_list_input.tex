@@ -1,0 +1,87 @@
+\hypertarget{classviva_1_1_image_list_input}{}\section{viva\+:\+:Image\+List\+Input Class Reference}
+\label{classviva_1_1_image_list_input}\index{viva\+::\+Image\+List\+Input@{viva\+::\+Image\+List\+Input}}
+
+
+{\ttfamily \#include $<$input.\+h$>$}
+
+
+
+Inheritance diagram for viva\+:\+:Image\+List\+Input\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classviva_1_1_image_list_input__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for viva\+:\+:Image\+List\+Input\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classviva_1_1_image_list_input__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classviva_1_1_image_list_input_aedb635b2155c7e3b99c661c34bd73a4a}{Image\+List\+Input} (const string directory, const Size \&size=Size(-\/1,-\/1), int color\+Flag=-\/1, int loops=1)
+\item 
+\hyperlink{classviva_1_1_image_list_input_a50fecca0d1f38b8ec70d9da362d72975}{Image\+List\+Input} (const vector$<$ string $>$ \&files, const Size \&size=Size(-\/1,-\/1), int color\+Flag=-\/1, int loops=1)
+\item 
+bool \hyperlink{classviva_1_1_image_list_input_a0e5759331fb604e55178560de816dbd6}{get\+Frame} (Mat \&frame)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classviva_1_1_image_list_input}{Image\+List\+Input} to process folder containing images of supported Open\+CV formats. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{viva\+::\+Image\+List\+Input@{viva\+::\+Image\+List\+Input}!Image\+List\+Input@{Image\+List\+Input}}
+\index{Image\+List\+Input@{Image\+List\+Input}!viva\+::\+Image\+List\+Input@{viva\+::\+Image\+List\+Input}}
+\subsubsection[{\texorpdfstring{Image\+List\+Input(const string directory, const Size \&size=\+Size(-\/1,-\/1), int color\+Flag=-\/1, int loops=1)}{ImageListInput(const string directory, const Size &size=Size(-1,-1), int colorFlag=-1, int loops=1)}}]{\setlength{\rightskip}{0pt plus 5cm}Image\+List\+Input\+::\+Image\+List\+Input (
+\begin{DoxyParamCaption}
+\item[{const string}]{directory, }
+\item[{const Size \&}]{size = {\ttfamily Size(-\/1,-\/1)}, }
+\item[{int}]{color\+Flag = {\ttfamily -\/1}, }
+\item[{int}]{loops = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{classviva_1_1_image_list_input_aedb635b2155c7e3b99c661c34bd73a4a}{}\label{classviva_1_1_image_list_input_aedb635b2155c7e3b99c661c34bd73a4a}
+\hyperlink{classviva_1_1_image_list_input}{Image\+List\+Input} constructor using a directory path \index{viva\+::\+Image\+List\+Input@{viva\+::\+Image\+List\+Input}!Image\+List\+Input@{Image\+List\+Input}}
+\index{Image\+List\+Input@{Image\+List\+Input}!viva\+::\+Image\+List\+Input@{viva\+::\+Image\+List\+Input}}
+\subsubsection[{\texorpdfstring{Image\+List\+Input(const vector$<$ string $>$ \&files, const Size \&size=\+Size(-\/1,-\/1), int color\+Flag=-\/1, int loops=1)}{ImageListInput(const vector< string > &files, const Size &size=Size(-1,-1), int colorFlag=-1, int loops=1)}}]{\setlength{\rightskip}{0pt plus 5cm}Image\+List\+Input\+::\+Image\+List\+Input (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ string $>$ \&}]{files, }
+\item[{const Size \&}]{size = {\ttfamily Size(-\/1,-\/1)}, }
+\item[{int}]{color\+Flag = {\ttfamily -\/1}, }
+\item[{int}]{loops = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{classviva_1_1_image_list_input_a50fecca0d1f38b8ec70d9da362d72975}{}\label{classviva_1_1_image_list_input_a50fecca0d1f38b8ec70d9da362d72975}
+\hyperlink{classviva_1_1_image_list_input}{Image\+List\+Input} constructor using a vector of filenames containing the images of the sequence in order. 
+
+\subsection{Member Function Documentation}
+\index{viva\+::\+Image\+List\+Input@{viva\+::\+Image\+List\+Input}!get\+Frame@{get\+Frame}}
+\index{get\+Frame@{get\+Frame}!viva\+::\+Image\+List\+Input@{viva\+::\+Image\+List\+Input}}
+\subsubsection[{\texorpdfstring{get\+Frame(\+Mat \&frame)}{getFrame(Mat &frame)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Image\+List\+Input\+::get\+Frame (
+\begin{DoxyParamCaption}
+\item[{Mat \&}]{frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classviva_1_1_image_list_input_a0e5759331fb604e55178560de816dbd6}{}\label{classviva_1_1_image_list_input_a0e5759331fb604e55178560de816dbd6}
+Overrided from \hyperlink{classviva_1_1_input}{Input} Base Class. Used to extract a frame from the input sequence. Returns whether or not a frame was sucessfuly returned. 
+\begin{DoxyParams}{Parameters}
+{\em frame} & output image frame from the sequence \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classviva_1_1_input_aa24f1c290895fba92d7e1c6032dc4ecb}{viva\+::\+Input}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+input.\+h\item 
+input.\+cpp\end{DoxyCompactItemize}

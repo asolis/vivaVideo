@@ -1,0 +1,102 @@
+\hypertarget{classviva_1_1_video_output}{}\section{viva\+:\+:Video\+Output Class Reference}
+\label{classviva_1_1_video_output}\index{viva\+::\+Video\+Output@{viva\+::\+Video\+Output}}
+
+
+{\ttfamily \#include $<$output.\+h$>$}
+
+
+
+Inheritance diagram for viva\+:\+:Video\+Output\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classviva_1_1_video_output__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for viva\+:\+:Video\+Output\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classviva_1_1_video_output__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classviva_1_1_video_output_af696901783add61a8855e325d214db88}{Video\+Output} (const string \&filename, Size size=Size(-\/1,-\/1), int fps=30, C\+O\+D\+EC codec=C\+O\+D\+E\+C\+::\+M\+P\+E\+G4, int code\+Flag=-\/1)
+\item 
+virtual bool \hyperlink{classviva_1_1_video_output_ae18c0d361f077619db8d3cdab8283697}{write\+Frame} (Mat \&frame)
+\item 
+void \hyperlink{classviva_1_1_video_output_a261b56ddf7128f672adf880f6788798e}{set\+Codec} (C\+O\+D\+EC codec)
+\item 
+\hyperlink{classviva_1_1_video_output_af8cd62606fabbf14b33f1625cf1d2cb6}{$\sim$\+Video\+Output} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Video \hyperlink{classviva_1_1_output}{Output} class. Generates a video file using an specified coded, resolution, frame per second rate and conversionflag 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{viva\+::\+Video\+Output@{viva\+::\+Video\+Output}!Video\+Output@{Video\+Output}}
+\index{Video\+Output@{Video\+Output}!viva\+::\+Video\+Output@{viva\+::\+Video\+Output}}
+\subsubsection[{\texorpdfstring{Video\+Output(const string \&filename, Size size=\+Size(-\/1,-\/1), int fps=30, C\+O\+D\+E\+C codec=\+C\+O\+D\+E\+C\+::\+M\+P\+E\+G4, int code\+Flag=-\/1)}{VideoOutput(const string &filename, Size size=Size(-1,-1), int fps=30, CODEC codec=CODEC::MPEG4, int codeFlag=-1)}}]{\setlength{\rightskip}{0pt plus 5cm}Video\+Output\+::\+Video\+Output (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{filename, }
+\item[{Size}]{size = {\ttfamily Size(-\/1,-\/1)}, }
+\item[{int}]{fps = {\ttfamily 30}, }
+\item[{C\+O\+D\+EC}]{codec = {\ttfamily CODEC\+:\+:MPEG4}, }
+\item[{int}]{code\+Flag = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}\hypertarget{classviva_1_1_video_output_af696901783add61a8855e325d214db88}{}\label{classviva_1_1_video_output_af696901783add61a8855e325d214db88}
+Creates a Video \hyperlink{classviva_1_1_output}{Output} using the 
+\begin{DoxyParams}{Parameters}
+{\em filename} & video file filename \\
+\hline
+{\em size} & scale the final video output to the desired resolution \\
+\hline
+{\em fps} & frame per seconds \\
+\hline
+{\em codec} & One of the available Open\+CV codecs installed in your computer \\
+\hline
+{\em code\+Flag} & color conversion e.\+g., C\+V\+\_\+\+B\+G\+R2\+G\+R\+AY \\
+\hline
+\end{DoxyParams}
+\index{viva\+::\+Video\+Output@{viva\+::\+Video\+Output}!````~Video\+Output@{$\sim$\+Video\+Output}}
+\index{````~Video\+Output@{$\sim$\+Video\+Output}!viva\+::\+Video\+Output@{viva\+::\+Video\+Output}}
+\subsubsection[{\texorpdfstring{$\sim$\+Video\+Output()}{~VideoOutput()}}]{\setlength{\rightskip}{0pt plus 5cm}viva\+::\+Video\+Output\+::$\sim$\+Video\+Output (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classviva_1_1_video_output_af8cd62606fabbf14b33f1625cf1d2cb6}{}\label{classviva_1_1_video_output_af8cd62606fabbf14b33f1625cf1d2cb6}
+Destructor will release the Video\+Writer output 
+
+\subsection{Member Function Documentation}
+\index{viva\+::\+Video\+Output@{viva\+::\+Video\+Output}!set\+Codec@{set\+Codec}}
+\index{set\+Codec@{set\+Codec}!viva\+::\+Video\+Output@{viva\+::\+Video\+Output}}
+\subsubsection[{\texorpdfstring{set\+Codec(\+C\+O\+D\+E\+C codec)}{setCodec(CODEC codec)}}]{\setlength{\rightskip}{0pt plus 5cm}void viva\+::\+Video\+Output\+::set\+Codec (
+\begin{DoxyParamCaption}
+\item[{C\+O\+D\+EC}]{codec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classviva_1_1_video_output_a261b56ddf7128f672adf880f6788798e}{}\label{classviva_1_1_video_output_a261b56ddf7128f672adf880f6788798e}
+Set the codec to use while generating the video file \index{viva\+::\+Video\+Output@{viva\+::\+Video\+Output}!write\+Frame@{write\+Frame}}
+\index{write\+Frame@{write\+Frame}!viva\+::\+Video\+Output@{viva\+::\+Video\+Output}}
+\subsubsection[{\texorpdfstring{write\+Frame(\+Mat \&frame)}{writeFrame(Mat &frame)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Video\+Output\+::write\+Frame (
+\begin{DoxyParamCaption}
+\item[{Mat \&}]{frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classviva_1_1_video_output_ae18c0d361f077619db8d3cdab8283697}{}\label{classviva_1_1_video_output_ae18c0d361f077619db8d3cdab8283697}
+Override from \hyperlink{classviva_1_1_output}{Output} base class 
+
+Implements \hyperlink{classviva_1_1_output_ac74a311b4d151c5507d1351b7fc3426e}{viva\+::\+Output}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+output.\+h\item 
+output.\+cpp\end{DoxyCompactItemize}
